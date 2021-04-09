@@ -1,0 +1,39 @@
+<section id="corpoSectionId">
+  <div class="container-fluid corpoSite row mb">
+    <h1 class="titleBuscar">Buscar por:</h1>
+
+    <div class="servicos">
+      <div class="servicosWrapper flex-column flex-lg-row">
+        <div class="card servicoCard examecard">
+          <a
+            class="linkcard cardExame"
+            [routerLink]="['/pesquisa/exames']"
+            href="../corpoExames/corpoExames.component.html"
+          >
+            <span class="spanServicos">
+              <img class="cardImgExames" src="../assets/exame.svg" />
+
+              <p>Exames Laboratoriais</p>
+            </span>
+          </a>
+        </div>
+
+        <div class="card servicoCard especialidadesCard flex-column flex-lg-row">
+          <a class="linkcard cardEspecialidades" [routerLink]="['/pesquisa/consultas']" href="#">
+            <span class="spanServicos">
+              <img class="cardImgEspecialidades" src="../assets/especialidades.svg" />
+
+              <p>Especialidades</p>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="botaoWrapper">
+        <button class="botaoVoltar" onclick="location.href='https://fbsaude.com.br'" type="button">
+          Voltar
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

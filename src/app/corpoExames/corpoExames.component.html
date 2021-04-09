@@ -1,0 +1,118 @@
+<section id="exameSectionId">
+  <div class="corpoExames row mb">
+    <div class="agendamentoExames">
+      <div class="exames">
+        <h1 class="heading">{{ title }}</h1>
+
+        <p class="paragrafo">{{ subtitle }}</p>
+        <form class="form formularioExames">
+          <div class="containerForm">
+            <div class="formRow formRow flex-column flex-lg-row">
+              <fieldset class="field">
+                <label for="specialy" class="label">Especialidade</label>
+
+                <select
+                  id="specialty"
+                  name="specialty"
+                  class="selectEspecialidade select select--default"
+                  (change)="onSelectEspecialidade($event)"
+                >
+                  <option value="-1" [selected]="especialidade == -1">Selecione</option>
+                  <ng-container *ngIf="data != null">
+                    <option [value]="i" *ngFor="let item of data; let i = index">
+                      {{ item.nome }}
+                    </option>
+                  </ng-container>
+                </select>
+              </fieldset>
+
+              <fieldset class="field fieldEstado">
+                <label for="specialy" class="label">Estado</label>
+
+                <select
+                  [disabled]="estadoList == false"
+                  id="specialty"
+                  name="specialty"
+                  class="selectEstado select select--default"
+                  (change)="onSelectEstado($event)"
+                >
+                  <option value="-1" [selected]="estadoList == -1">Selecione</option>
+                  <ng-container *ngIf="data != null && estadoList != false">
+                    <option [value]="i" *ngFor="let item of estadoList; let i = index">
+                      {{ item.nome }}
+                    </option>
+                  </ng-container>
+                </select>
+              </fieldset>
+
+              <fieldset class="field">
+                <label for="specialy" class="label">Cidade</label>
+
+                <select
+                  [disabled]="cidadeList == false"
+                  id="specialty"
+                  name="specialty"
+                  class="selectCidade select select--default"
+                  (change)="onSelectCidade($event)"
+                >
+                  <option value="-1" [selected]="cidade == -1">Selecione</option>
+                  <ng-container *ngIf="data != null && cidadeList != false">
+                    <option [value]="i" *ngFor="let item of cidadeList; let i = index">
+                      {{ item.nome }}
+                    </option>
+                  </ng-container>
+                </select>
+              </fieldset>
+
+              <fieldset class="field">
+                <label for="specialy" class="label">Bairro</label>
+
+                <select
+                  [disabled]="bairroList == false"
+                  id="specialty"
+                  name="specialty"
+                  class="selectBairro select select--default"
+                  (change)="onSelectBairro($event)"
+                >
+                  <option value="" [selected]="bairro == ''">Selecione</option>
+                  <ng-container *ngIf="data != null && bairroList != false">
+                    <option [value]="item.key" *ngFor="let item of bairroList | keyvalue">
+                      {{ item.key }}
+                    </option>
+                  </ng-container>
+                </select>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+
+        <div class="table-responsive tabelaAgendamento">
+          <table class="agendamento">
+            <div *ngFor="let item of tabela || []" class="resultadoAgendamento">
+              <th scope="row" class="spanNome">{{ item.nome }}</th>
+              <th class="spanBairro">{{ item.bairro }}</th>
+              <th class="spanCidade">{{ cidadeList[cidade].nome }}</th>
+              <th class="spanEstado">{{ estadoList[estado].nome }}</th>
+              <th class="spanBotao">
+                <a
+                  class="linkBotao"
+                  target="_blank"
+                  [href]="
+                    msgWhatsapp(
+                      item.nome,
+                      estadoList[estado].nome,
+                      cidadeList[cidade].nome,
+                      item.bairro
+                    )
+                  "
+                >
+                  <button class="botaoAgendar" type="button">Agendar</button>
+                </a>
+              </th>
+            </div>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

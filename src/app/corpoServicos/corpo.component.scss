@@ -1,0 +1,105 @@
+#corpoSectionId {
+  margin: 0;
+  padding: 0;
+  transform: none;
+  background-color: #f6fbfd;
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+
+    padding-left: 16px;
+    margin: 0;
+
+    .titleBuscar {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+      margin: 0 auto 0 22%;
+      max-width: 800px;
+      padding: 19.5px;
+
+      font-size: 32px;
+      line-height: 1.25;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .servicos {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 800px;
+      position: relative;
+      width: 100%;
+      .servicosWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .servicoCard {
+          align-items: center;
+          background: #fff;
+          border: 1px solid rgba(189, 194, 198, 0.4);
+          display: inline-flex;
+          height: 100vh;
+          justify-content: center;
+          margin: 19.5px;
+          max-height: 286px;
+          max-width: 316px;
+          width: 100%;
+
+          &:hover {
+            box-shadow: 0.3rem 1rem 2rem rgba(0, 0, 0, 0.175);
+            cursor: pointer;
+          }
+          .linkcard {
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+
+            .spanServicos {
+              background-position: center 0;
+              background-repeat: no-repeat;
+              cursor: pointer;
+              font-weight: 500;
+              height: 3rem;
+              line-height: 2rem;
+              text-align: center;
+              width: 100%;
+              color: #114d11;
+
+              .cardImgExames {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+      .botaoVoltar {
+        max-width: 175px;
+        background-color: transparent;
+        border: 2px solid #bdc2c6;
+        color: #595959;
+        font-weight: 400;
+        border-radius: 30px;
+        cursor: pointer;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        outline: none;
+        padding: 15px 0;
+        text-transform: uppercase;
+        transition: opacity 0.3s;
+        width: 100%;
+        margin-left: 60px;
+        &:hover {
+          box-shadow: 0.3rem 1rem 2rem rgba(0, 0, 0, 0.175) !important;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

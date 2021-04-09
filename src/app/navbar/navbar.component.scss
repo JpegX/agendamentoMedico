@@ -1,0 +1,176 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@media (max-width: 992px) {
+  .liTel {
+    width: 151px;
+  }
+  .liEmail {
+    width: 230px;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .liTel {
+    width: 151px;
+  }
+  .liEmail {
+    width: 230px;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (max-width: 455px) {
+  .liTel {
+    width: 151px;
+  }
+  .liEmail {
+    width: 230px;
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+#navbarPai {
+  background-color: #e1e1e1;
+}
+.navbarPosicionador {
+  margin-left: 52px;
+  margin-right: 52px;
+  padding: 0;
+  border: 0;
+}
+.navbarContatos {
+  padding: 15px;
+}
+
+.ulContatos {
+  display: flex;
+  // width: 570px;
+  // height: 22px;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.liContatos {
+  display: flex;
+  list-style-type: none;
+}
+.linkContatos {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  .spanImg {
+    width: 22.5px;
+    height: 22px;
+  }
+  .imgTel {
+    margin-bottom: 10px;
+  }
+  .imgEmail {
+    margin-bottom: 10px;
+    margin-left: 8px;
+  }
+  .spanTexto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #114d11;
+
+    padding-left: 5px;
+    margin-right: 8px;
+  }
+  .spanEmail {
+    margin-left: 8px;
+  }
+  .imgContatos {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+#navbarProfissionais {
+  justify-content: flex-end;
+}
+.ulProfissionais {
+  display: flex;
+  justify-content: flex-end;
+  width: 570px;
+  height: 22px;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.liProfissionais {
+  display: flex;
+  list-style-type: none;
+}
+.linkProfissionais {
+  display: flex;
+  text-decoration: none;
+}
+.spanImg {
+  width: auto;
+  height: auto;
+}
+.imgAssociados {
+  margin-bottom: 10px;
+}
+.imgMedicos {
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+
+.spanTextoProfissionais {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #114d11;
+
+  padding-left: 5px;
+  margin-right: 8px;
+}
+
+.imgProfissionais {
+  width: auto;
+  height: auto;
+}
+.spanMedicos {
+  margin-right: 15px;
+}
+.navbarMid {
+  background-color: white;
+  width: 100%;
+  height: 90px;
+}
+.navbarPosicionadorMid {
+  padding: 0;
+  margin-left: 52px;
+  margin-right: 52px;
+  margin-bottom: 5px;
+}
+.navbarLogo {
+  padding: 0;
+}
+#logoImg {
+  width: 267px;
+}

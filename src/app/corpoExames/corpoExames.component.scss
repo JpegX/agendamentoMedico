@@ -1,0 +1,175 @@
+@media (max-width: 992px) {
+  .heading,
+  .paragrafo,
+  .formularioExames {
+    margin-left: 30px;
+  }
+  .select {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .spanBotao {
+    margin-left: 10px;
+  }
+}
+
+#exameSectionId {
+  .corpoExames {
+    margin: 0 0 0 -15px;
+    .agendamentoExames {
+      display: flex;
+      height: 100%;
+      margin: 0 auto;
+      max-width: 1060px;
+      width: 100%;
+
+      .exames {
+        padding-bottom: 100px;
+        width: 100%;
+        padding-top: 30px;
+        .heading {
+          margin-bottom: 0;
+          text-align: left;
+          font-size: 32px;
+          line-height: 1.25;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        .paragrafo {
+          padding: 1rem 1.5rem 1.5rem 0;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        .formularioExames {
+          padding: 24px 0;
+          position: relative;
+
+          .containerForm {
+            max-width: 100%;
+
+            .formRow {
+              display: flex;
+              flex-direction: row;
+
+              .fieldEstado {
+                max-width: 130px;
+              }
+              .field {
+                margin-right: 16px;
+                position: relative;
+                width: 100%;
+                font-family: 'Montserrat', sans-serif;
+              }
+              .label {
+                width: 200px;
+              }
+              .select {
+                appearance: none;
+                width: 100%;
+                background-color: transparent;
+                border: 2px solid #bdc2c6;
+                color: #474747;
+                font-weight: 400;
+                border-radius: 5px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                outline: none;
+                padding-left: 5px;
+                transition: opacity 0.3s;
+                background: #fff
+                  url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUgOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTE0LjAwMDAwMCwgLTEwNDUuMDAwMDAwKSIgc3Ryb2tlPSIjNTk1OTU5IiBzdHJva2Utd2lkdGg9IjIiPgogICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDAuMDAwMDAwLCAzOTUuMDAwMDAwKSI+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDQwLjAwMDAwMCkiPgogICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzIuMDAwMDAwLCAxODIuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAzODAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDMxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIHBvaW50cz0iNDQzIDE4IDQ0OS41IDI0IDQ1NiAxOCIvPgogICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==)
+                  no-repeat right 10px center/16px;
+                &:hover {
+                  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.175) !important;
+                  cursor: pointer;
+                }
+              }
+              .selectEstado {
+                background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTUgOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTE0LjAwMDAwMCwgLTEwNDUuMDAwMDAwKSIgc3Ryb2tlPSIjNTk1OTU5IiBzdHJva2Utd2lkdGg9IjIiPgogICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NDAuMDAwMDAwLCAzOTUuMDAwMDAwKSI+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDQwLjAwMDAwMCkiPgogICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzIuMDAwMDAwLCAxODIuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAzODAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDMxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBvbHlsaW5lIHBvaW50cz0iNDQzIDE4IDQ0OS41IDI0IDQ1NiAxOCIvPgogICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgICAgPC9nPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==)
+                  no-repeat right 9px center/16px;
+                max-width: 130px;
+              }
+            }
+          }
+        }
+
+        .botao {
+          margin-top: 8rem;
+        }
+
+        .tabelaAgendamento {
+          .agendamento {
+            width: 100%;
+            background-color: hsla(0, 0%, 84.7%, 0.3);
+            border-bottom: 1px solid #d8d8d8;
+
+            .resultadoAgendamento {
+              justify-content: center;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .spanNome {
+                font-weight: 500;
+                width: 30%;
+                border-right: 1px solid #d8d8d8;
+                display: flex;
+                padding: 1.5rem;
+              }
+              .spanBairro {
+                text-transform: capitalize;
+                width: 20%;
+                border-right: 1px solid #d8d8d8;
+                display: flex;
+                padding: 0.5rem;
+              }
+              .spanCidade {
+                text-transform: capitalize;
+                border-right: 1px solid #d8d8d8;
+                display: flex;
+                padding: 1.5rem;
+              }
+              .spanEstado {
+                border-right: 1px solid #d8d8d8;
+                display: flex;
+                padding: 1rem;
+              }
+              .spanBotao {
+                border-right: none;
+                width: 200px;
+                align-items: center;
+                display: flex;
+                padding: 1rem;
+                .linkBotao {
+                  align-items: center;
+                  text-decoration: none;
+                  width: 100%;
+                  .botaoAgendar {
+                    align-items: center;
+                    background-color: #6b228f;
+                    border: 2px solid #bdc2c6;
+                    color: white;
+                    font-weight: 400;
+                    border-radius: 30px;
+                    display: block;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 10px;
+                    outline: none;
+                    padding: 15px 0;
+                    text-transform: uppercase;
+                    transition: opacity 0.3s;
+                    width: 100%;
+                    &:hover {
+                      box-shadow: 0.3rem 1rem 2rem rgba(0, 0, 0, 0.175) !important;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
