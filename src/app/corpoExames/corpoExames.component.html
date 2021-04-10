@@ -94,23 +94,74 @@
               <th class="spanCidade">{{ cidadeList[cidade].nome }}</th>
               <th class="spanEstado">{{ estadoList[estado].nome }}</th>
               <th class="spanBotao">
-                <a
-                  class="linkBotao"
-                  target="_blank"
-                  [href]="
-                    msgWhatsapp(
-                      item.nome,
-                      estadoList[estado].nome,
-                      cidadeList[cidade].nome,
-                      item.bairro
-                    )
-                  "
-                >
-                  <button class="botaoAgendar" type="button">Agendar</button>
+                <a class="linkBotao" target="_blank">
+                  <button
+                    class="botaoAgendar"
+                    data-toggle="modal"
+                    data-target="#modalUp"
+                    type="button"
+                  >
+                    Agendar
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="modalUp"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="TituloModalCentralizado"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="modal-title" id="TituloModalCentralizado">
+                            <img src="..\assets\popUp.svg" />
+                          </div>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Fechar"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <h5 class="hModal">Saúde Protegida</h5>
+                          <p class="paragrafoModal">
+                            Contrate agora e tenha acesso instantâneo à telemedicina, descontos em
+                            medicamentos, consultas presenciais e exames laboratoriais.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="tel:08000408007" style="text-decoration: none">
+                            <button type="button" class="btn btn-secondary botaoSac">SAC</button>
+                          </a>
+                          <a
+                            target="_blank"
+                            [href]="
+                              msgWhatsapp(
+                                item.nome,
+                                estadoList[estado].nome,
+                                cidadeList[cidade].nome,
+                                item.bairro
+                              )
+                            "
+                            style="text-decoration: none"
+                          >
+                            <button type="button" class="botaoWhatsapp">Whatsapp</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </th>
             </div>
           </table>
+        </div>
+        <div class="botaoWrapper">
+          <button class="botaoVoltar" routerLink="/agendamento" type="button">Voltar</button>
         </div>
       </div>
     </div>
