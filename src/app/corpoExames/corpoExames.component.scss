@@ -275,5 +275,6 @@
   z-index: -1;
 }
 .modal-content {
+  position: fixed;
   z-index: 1000;
 }
