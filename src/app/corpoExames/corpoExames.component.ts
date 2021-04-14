@@ -8,6 +8,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./corpoExames.component.scss']
 })
 export class CorpoExamesComponent implements OnInit, OnDestroy {
+  mostrar = {
+    profissionalWhats: '',
+    estadoWhats: '',
+    cidadeWhats: '',
+    bairroWhats: ''
+  };
+
   type: any;
 
   title: string;
@@ -113,6 +120,12 @@ export class CorpoExamesComponent implements OnInit, OnDestroy {
 
   msgWhatsapp(profissionalWhats, estadoWhats, cidadeWhats, bairroWhats) {
     return `https://api.whatsapp.com/send?phone=5511966449771&text=PROFISSIONAL: ${profissionalWhats};%0AESTADO: ${estadoWhats};%0ACIDADE: ${cidadeWhats};%0ABAIRRO: ${bairroWhats}.`;
+  }
+  mostrarModal(profissionalWhats, estadoWhats, cidadeWhats, bairroWhats) {
+    this.mostrar.profissionalWhats = profissionalWhats;
+    this.mostrar.estadoWhats = estadoWhats;
+    this.mostrar.cidadeWhats = cidadeWhats;
+    this.mostrar.bairroWhats = bairroWhats;
   }
 }
 
