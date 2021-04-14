@@ -275,6 +275,8 @@
   z-index: -1;
 }
 .modal-content {
-  overflow-y: hidden;
   z-index: 1000;
+}
+#modalUp {
+  overflow-y: hidden;
 }
