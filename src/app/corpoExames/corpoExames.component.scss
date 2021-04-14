@@ -275,6 +275,6 @@
   z-index: -1;
 }
 .modal-content {
-  position: fixed;
+  overflow-y: hidden;
   z-index: 1000;
 }
