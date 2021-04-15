@@ -180,11 +180,13 @@
 .hModal {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .paragrafoModal {
   font-weight: normal;
   display: flex;
   text-align: center;
+  margin-top: 5px;
 }
 .botaoWhatsapp {
   text-decoration: none;
@@ -244,6 +246,44 @@
   transition: opacity 0.3s;
   margin-top: 15px;
 }
+.modoPC {
+  display: flex;
+  visibility: visible;
+}
+.modoCelular {
+  display: none;
+  visibility: hidden;
+}
+.modalTel {
+  margin-right: 10px;
+}
+.imgTel {
+  margin-right: 5px;
+}
+.imgWhats {
+  margin-right: 5px;
+}
+.spanModalTel {
+  margin-right: 10px;
+  align-items: center;
+  display: flex;
+}
+.spanModalWhats {
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+@media (max-width: 600px) {
+  .modoCelular {
+    display: flex;
+    visibility: visible;
+  }
+  .modoPC {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .heading,
   .paragrafo,
@@ -263,6 +303,9 @@
     margin-left: 30px;
     width: 120px;
     height: 60px;
+  }
+  .modal {
+    justify-content: center;
   }
 }
 

@@ -131,7 +131,7 @@
   aria-labelledby="TituloModalCentralizado"
   aria-hidden="true"
 >
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <div class="modal-title" id="TituloModalCentralizado">
@@ -142,30 +142,37 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5 class="hModal">Saúde Protegida</h5>
-        <p class="paragrafoModal">
-          Agende agora mesmo sua consulta por whatsapp ou telefone e tenha acesso a todos os nossos
-          benefícios!
-        </p>
+        <h5 class="hModal">Benefícios FB Saúde</h5>
+        <p class="paragrafoModal">Agende agora mesmo sua consulta por WhatsApp ou telefone!</p>
       </div>
       <div class="modal-footer">
-        <a href="tel:08000408007" style="text-decoration: none">
-          <button type="button" class="btn btn-secondary botaoSac">SAC</button>
-        </a>
-        <a
-          target="_blank"
-          [href]="
-            msgWhatsapp(
-              mostrar.profissionalWhats,
-              mostrar.estadoWhats,
-              mostrar.cidadeWhats,
-              mostrar.bairroWhats
-            )
-          "
-          style="text-decoration: none"
-        >
-          <button type="button" class="botaoWhatsapp">Whatsapp</button>
-        </a>
+        <div class="modoPC">
+          <span class="spanModalTel"
+            ><img class="imgTel" src="../assets/telephone-fill.png" />0800 040 8007</span
+          >
+          <span class="spanModalWhats">
+            <img class="imgWhats" src="../assets/whatsLogo.svg" />(11) 94501-4352</span
+          >
+        </div>
+        <div class="modoCelular">
+          <a class="modalTel" href="tel:08000408007" style="text-decoration: none">
+            <button type="button" class="btn btn-secondary botaoSac">SAC</button>
+          </a>
+          <a
+            target="_blank"
+            [href]="
+              msgWhatsapp(
+                mostrar.profissionalWhats,
+                mostrar.estadoWhats,
+                mostrar.cidadeWhats,
+                mostrar.bairroWhats
+              )
+            "
+            style="text-decoration: none"
+          >
+            <button type="button" class="botaoWhatsapp">Whatsapp</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
