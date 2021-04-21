@@ -16,8 +16,7 @@
       display: flex;
       flex-wrap: wrap;
       position: relative;
-
-      margin: 0 auto 0 22%;
+      margin: auto;
       max-width: 800px;
       padding: 19.5px;
 
@@ -94,12 +93,19 @@
         text-transform: uppercase;
         transition: opacity 0.3s;
         width: 100%;
-        margin-left: 60px;
+        margin:auto;
         &:hover {
           box-shadow: 0.3rem 1rem 2rem rgba(0, 0, 0, 0.175) !important;
           cursor: pointer;
         }
       }
     }
+  }
+}
+@media (max-width: 660px){
+  .botaoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
